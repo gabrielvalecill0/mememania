@@ -1,0 +1,106 @@
+<html>
+<head><title>Gabriel Valecillo</title>
+<style type:text/css>
+
+table{background-color:black;
+	  color:white;
+	  border-color:gray;}
+
+input{background-color:black;
+	  color:white;}
+
+input:focus{background-color:white;
+			color:black;}
+
+input:active{background-color:red}
+
+</style>
+</head>
+<body>
+<script type=text/javascript>
+
+	alert("Bienvenidos")
+
+</script>
+
+<form action="mailto:direccion@correo.com" method="post">
+ 
+ <table border=20px >
+	
+ <tr>
+		<td>Nombres:
+	
+			<input type=text name=Nombres value="" required  pattern="[A-Za-z]+" placeholder="escribe tu nombre"/>
+	
+		</td>
+ 
+		<td>Apellidos:
+	
+			<input type=text name=Apellidos value=""  required pattern="*[A-Za-z]" maxlength=10 placeholder="escribe tu apellido"/>
+			
+		</td>
+
+ </tr>
+ 
+ <tr>
+	
+		<td>fecha de nacimiento:
+	
+			<input type=date name=nacimiento value="" required style=color:909090;/>
+	
+		</td>
+ 
+		<td>Cedula de identidad:
+		
+			<input type=number maxlength=12 name=CI value="" min=1 required  pattern="^[0-9]+" placeholder="escribe tu cedula de identidad"/>
+		
+		</td>
+ 
+ <tr>
+ 
+		<td>Profesion:
+		
+			<input type=text name=Profesion value="" required placeholder="escribe tu profesion"/>
+	
+		</td>
+	
+		<td>Nacionalidad:
+	
+			<input type=text name=Nacionalidad value="" required placeholder="escribe tu nacionalidad"/>
+		
+		</td>
+ </tr>
+
+ <tr>
+		<td>Sexo:
+			
+			<input type=radio  name=Sexo value=1 />hombre
+			
+			<input type=radio name=Sexo value=2 />mujer
+
+			<input type=radio name=Sexo value=3 />otro
+			
+		</td>
+ 
+		<td>correo electronico:
+			
+			<input type=email name=correo value="" required placeholder="escribe tu correo electronico"/>
+ 
+		</td>
+</tr>
+<tr>
+		<td colspan=2 >contrase&ntildea:
+		
+			<input type=password name=contrase&ntildea value="" required  maxlength=12 minlength="6" placeholder="escribe tu contrase&ntilde a"/>
+ 
+		</td>
+</tr>
+	
+</table>
+
+	<input type=submit value=Enviar style="width:100px; height:100px;font-size:30px;background-color:white; color:black;"/>
+
+
+</form>
+</body>
+</html>
